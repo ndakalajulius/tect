@@ -1,0 +1,102 @@
+/* About.css */
+
+.about-section {
+  padding: 80px 20px;
+  background-color: #f9fafb; /* Matches global background */
+  color: #0f172a; /* Slate-900 for main text */
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+  text-align: center;
+  color: #1e293b; /* Slate-800 */
+}
+
+.about-tagline {
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #334155; /* Slate-700 */
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text h3 {
+  font-size: 1.5rem;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: #1e293b;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #475569; /* Slate-600 */
+  line-height: 1.6;
+}
+
+.about-text ul {
+  list-style: disc inside;
+  padding-left: 0;
+  margin-top: 16px;
+  color: #475569;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.about-cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.about-cta p {
+  font-size: 1.2rem;
+  color: #334155;
+  margin-bottom: 16px;
+}
+
+.about-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3b82f6; /* Blue-500 */
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #2563eb; /* Blue-600 */
+}
+
+

@@ -1,0 +1,62 @@
+.careers-section {
+  padding: 60px 20px;
+  max-width: 700px;
+  margin: auto;
+  color: #0f172a;
+  background-color: #f8fafc;
+  border-radius: 12px;
+}
+
+.job-listings {
+  display: grid;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.job-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+}
+
+.career-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.career-form input[type="text"],
+.career-form input[type="email"],
+.career-form input[type="file"] {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.career-form button {
+  padding: 12px 20px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.career-form button:hover {
+  background-color: #1e40af;
+}
+
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
+.sending {
+  color: #64748b;
+}

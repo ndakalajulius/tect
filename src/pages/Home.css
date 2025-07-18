@@ -1,0 +1,43 @@
+.home-hero {
+  background-color: #0f172a; /* Match the dark theme of other sections */
+  color: #ffffff;
+  padding: 100px 20px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-container {
+  max-width: 800px;
+}
+
+.home-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #d1d5db; /* Light gray for contrast */
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.home-btn:hover {
+  background-color: #2563eb;
+}
