@@ -11,11 +11,11 @@ function Pricing() {
           {/* Basic Plan */}
           <div className="pricing-card">
             <h3 className="card-title">Basic</h3>
-            <p className="card-price">$100</p>
+            <p className="card-price">KES 15000</p>
             <ul className="card-features">
-              <li>✔ 1 Website</li>
-              <li>✔ Basic Support</li>
-              <li>✔ 1-Week Delivery</li>
+              <li>ebsite</li>
+              <li> Basic Support</li>
+              <li> 1-Week Delivery</li>
             </ul>
             <a href="/contact" className="card-button">Get Started</a>
           </div>
@@ -23,11 +23,11 @@ function Pricing() {
           {/* Pro Plan */}
           <div className="pricing-card featured">
             <h3 className="card-title">Pro</h3>
-            <p className="card-price">$300</p>
+           <p className="card-price">KES 30000</p> {/* ← updated */}
             <ul className="card-features">
-              <li>✔ Up to 3 Projects</li>
-              <li>✔ Priority Support</li>
-              <li>✔ UI/UX + Backend</li>
+              <li>Up to 3 Projects</li>
+              <li> Priority Support</li>
+              <li> UI/UX + Backend</li>
             </ul>
             <a href="/contact" className="card-button">Choose Pro</a>
           </div>
@@ -37,9 +37,9 @@ function Pricing() {
             <h3 className="card-title">Enterprise</h3>
             <p className="card-price">Custom</p>
             <ul className="card-features">
-              <li>✔ Full Custom Solutions</li>
-              <li>✔ Dedicated Team</li>
-              <li>✔ SLA + NDA Support</li>
+              <li> Full Custom Solutions</li>
+              <li> Dedicated Team</li>
+              <li> SLA + NDA Support</li>
             </ul>
             <a href="/contact" className="card-button">Contact Us</a>
           </div>

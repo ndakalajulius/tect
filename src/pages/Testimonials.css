@@ -34,12 +34,14 @@
 }
 
 .testimonial-image {
-  width: 64px;
-  height: 64px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* optional: adds subtle depth */
 }
+
 
 .testimonial-text {
   font-size: 1rem;

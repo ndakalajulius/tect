@@ -1,102 +1,103 @@
-/* About.css */
-
 .about-section {
+  background: #f5f7fa;
   padding: 80px 20px;
-  background-color: #f9fafb; /* Matches global background */
-  color: #0f172a; /* Slate-900 for main text */
+  font-family: 'Inter', sans-serif;
 }
 
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .about-heading {
-  font-size: 2.5rem;
-  margin-bottom: 12px;
-  text-align: center;
-  color: #1e293b; /* Slate-800 */
+  font-size: 2.8rem;
+  color: #1e1e1e;
+  margin-bottom: 20px;
 }
 
 .about-tagline {
-  font-size: 1.125rem;
-  font-weight: 500;
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 40px;
-  color: #334155; /* Slate-700 */
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.7;
 }
 
 .about-content {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
+  gap: 50px;
   justify-content: center;
+  align-items: flex-start;
   margin-bottom: 60px;
 }
 
 .about-text {
   flex: 1;
-  min-width: 280px;
+  min-width: 300px;
+  max-width: 600px;
+  text-align: left;
 }
 
 .about-text h3 {
   font-size: 1.5rem;
-  margin-top: 24px;
-  margin-bottom: 12px;
-  color: #1e293b;
+  color: #171718;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .about-text p {
   font-size: 1rem;
-  color: #475569; /* Slate-600 */
+  color: #444;
   line-height: 1.6;
+  margin-bottom: 10px;
 }
 
-.about-text ul {
+.about-list {
   list-style: disc inside;
   padding-left: 0;
-  margin-top: 16px;
-  color: #475569;
+  margin-top: 10px;
+  color: #444;
 }
 
 .about-image {
   flex: 1;
-  min-width: 280px;
-  text-align: center;
+  min-width: 300px;
+  max-width: 500px;
 }
 
 .about-image img {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .about-cta {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.about-cta p {
+  background: #1e88e5;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 30px;
   font-size: 1.2rem;
-  color: #334155;
-  margin-bottom: 16px;
 }
 
 .about-btn {
   display: inline-block;
+  margin-top: 15px;
   padding: 12px 24px;
-  background-color: #3b82f6; /* Blue-500 */
-  color: white;
-  font-weight: bold;
-  border-radius: 8px;
+  background-color: white;
+  color: #1e88e5;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 .about-btn:hover {
-  background-color: #2563eb; /* Blue-600 */
+  background-color: #e3f2fd;
 }
-
-

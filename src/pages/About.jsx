@@ -6,43 +6,39 @@ function About() {
       <div className="about-container">
         <h2 className="about-heading">Who We Are</h2>
         <p className="about-tagline">
-          At <strong>Tectonic</strong>, we’re not just coding—we’re creating impact. A passionate team of dreamers, doers, and digital architects shaping tomorrow’s tech, today.
+          At <strong>Tectonic</strong>, we’re more than developers — we’re digital partners. Our team brings together strategy, creativity, and engineering to build powerful, scalable software.
         </p>
 
         <div className="about-content">
           <div className="about-text">
             <h3>Our Mission</h3>
             <p>
-              To ignite growth through high-impact, tailor-made software that empowers startups, scales businesses, and simplifies lives.
+              To empower businesses by delivering tailored software solutions that drive growth, simplify operations, and delight users.
             </p>
 
             <h3>What We Do</h3>
             <p>
-              We craft stunning web and mobile experiences. From seamless UIs to bulletproof backends, our work merges design, performance, and purpose.
+              We specialize in full-cycle product development — from concept to deployment. Whether it's a sleek mobile app or a complex web platform, we craft products that perform and scale.
             </p>
 
-            <h3>Why Teams Trust Us</h3>
-            <ul>
-              <li>Human-first, user-obsessed design</li>
-              <li>Clear, honest, and agile communication</li>
-              <li>Scalable code, built to grow with you</li>
-              <li>Timely delivery — and support that sticks</li>
+            <h3>Why Work With Us</h3>
+            <ul className="about-list">
+              <li>User-focused design and intuitive interfaces</li>
+              <li>Robust, scalable frontend and backend systems</li>
+              <li>Transparent, agile communication and workflows</li>
+              <li>On-time delivery backed by reliable support</li>
             </ul>
           </div>
 
           <div className="about-image">
-            <img src="/assets/team.jpg" alt="Our Dream Team at Tectonic" loading="lazy" />
+            <img src="/assets/team.jpg" alt="Tectonic development team" loading="lazy" />
           </div>
         </div>
 
-        <div className="about-cta">
-          <p>Ready to build your next big thing?</p>
-          <a href="/contact" className="about-btn">Let’s Talk</a>
-        </div>
+        
       </div>
     </section>
   );
 }
 
 export default About;
-

@@ -1,24 +1,34 @@
-import { useState } from "react";
-import { db } from "../firebase";
-import { collection, addDoc } from "firebase/firestore";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
-import { FaWhatsapp, FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
 function Contact() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState("");
+  const formRef = useRef();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setStatus("sending");
 
-    try {
-      await addDoc(collection(db, "contacts"), form);
-      setForm({ name: "", email: "", message: "" });
-      setStatus("success");
-    } catch (err) {
-      setStatus("error");
-    }
+    emailjs
+      .sendForm(
+        "service_97",
+        "template_5",
+        formRef.current,
+        "kDhACZjrSdA7cFpRU"
+      )
+      .then(
+        (result) => {
+          console.log("Success:", result.text);
+          setStatus("success");
+          formRef.current.reset(); // clear form
+        },
+        (error) => {
+          console.log("Error:", error.text);
+          setStatus("error");
+        }
+      );
   };
 
   return (
@@ -27,33 +37,18 @@ function Contact() {
         <h2>Let's Connect</h2>
         <p>Got a project in mind? Drop us a message or reach us through social platforms.</p>
 
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form className="contact-form" ref={formRef} onSubmit={handleSubmit}>
           <label>
             Name
-            <input
-              type="text"
-              value={form.name}
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
-              required
-            />
+            <input type="text" name="user_name" required />
           </label>
           <label>
             Email
-            <input
-              type="email"
-              value={form.email}
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
-              required
-            />
+            <input type="email" name="user_email" required />
           </label>
           <label>
             Message
-            <textarea
-              rows="5"
-              value={form.message}
-              onChange={(e) => setForm({ ...form, message: e.target.value })}
-              required
-            />
+            <textarea name="message" rows="5" required />
           </label>
           <button type="submit">Send Message</button>
 
@@ -62,23 +57,23 @@ function Contact() {
           {status === "sending" && <p className="sending">⏳ Sending...</p>}
         </form>
 
-       <div className="social-links">
-  <p>Or reach us via:</p>
-  <a href="https://wa.me/254712345678" target="_blank" rel="noopener noreferrer">
-    <FaWhatsapp /> WhatsApp
-  </a>
-  <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-    <FaLinkedin /> LinkedIn
-  </a>
-  <a href="https://x.com/yourprofile" target="_blank" rel="noopener noreferrer">
-    <FaTwitter /> X (Twitter)
-  </a>
-  <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-    <FaGithub /> GitHub
-  </a>
-</div>
-
-     </div></section>
+        <div className="social-links">
+          <p>Or reach us via:</p>
+          <a href="https://wa.me/254712345678" target="_blank" rel="noopener noreferrer">
+            <FaWhatsapp /> WhatsApp
+          </a>
+          <a href="https://linkedin.com/in/JuliusNdakala" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin /> LinkedIn
+          </a>
+          <a href="https://twitter.com/JuliusNdakala/" target="_blank" rel="noopener noreferrer">
+            <FaTwitter /> X (Twitter)
+          </a>
+          <a href="https://github.com/JuliusNdakala" target="_blank" rel="noopener noreferrer">
+            <FaGithub /> GitHub
+          </a>
+        </div>
+      </div>
+    </section>
   );
 }
 

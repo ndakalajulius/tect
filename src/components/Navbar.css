@@ -2,11 +2,13 @@
 .navbar {
   background-color: #0f172a;
   color: white;
-  padding: 16px 32px;
+  padding: 4px 32px;
+
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
 
 .navbar-container {
   display: flex;
@@ -90,7 +92,7 @@
 @media (max-width: 768px) {
   .navbar-links {
     position: absolute;
-    top: 70px;
+     top: 50px;
     left: 0;
     right: 0;
     background-color: #0f172a;
